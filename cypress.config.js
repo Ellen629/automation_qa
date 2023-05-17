@@ -10,8 +10,8 @@ module.exports = defineConfig({
         async setupNodeEvents(on, config) {
         const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
-        });
-        //add dotenv file here please
+        });d
+        Global_URL = "https://demoqa.com/"
         on("file:preprocessor", bundler);
         await cucumber(on, config);
         
