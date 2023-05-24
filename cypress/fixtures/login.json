@@ -1,0 +1,11 @@
+{
+  "validCredentials": {
+    "username": "Test_123",
+    "password": "Password55@",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlRlc3RfMTIzIiwicGFzc3dvcmQiOiJQYXNzd29yZDU1QCIsImlhdCI6MTY4NDg2MDkxMX0.dNA7aGtdCp4HQ731FZYK-9dxVNZ05m1UnuDJNfaT7xY"
+  },
+  "invalidCredentials": {
+    "username": "ooioioi",
+    "password": "ksjnasamsaskmdksjdskjd"
+  }
+}

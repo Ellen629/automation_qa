@@ -1,9 +1,8 @@
 const { defineConfig } = require("cypress");
-const cucumber =
-  require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
+require('dotenv').config();
+const cucumber = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const createEsbuildPlugin =
-  require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
+const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 module.exports = defineConfig({
   e2e: {
@@ -17,6 +16,10 @@ module.exports = defineConfig({
         
         return config;
         },
-        specPattern: ["**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],
+        specPattern: ["**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],   
+        env: {
+          mainUrl:process.env.MAIN_URL,
+        },
     },
+    
 });
